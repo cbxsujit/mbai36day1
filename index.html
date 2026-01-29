@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBAI Day 1 - Organizing Leaders & Team | Enhanced Session Summary</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .tab-btn.active { background-color: #DC2626; color: white; }
+        .quote-box { border-left: 4px solid #DC2626; background: #FEF2F2; }
+        .testimonial-box { background: linear-gradient(135deg, #FEF2F2 0%, #FFF 100%); border: 1px solid #FECACA; }
+        .key-insight { background: #111; color: #fff; border-radius: 8px; }
+        .video-ref { background: #FFF7ED; border: 1px solid #FDBA74; border-radius: 6px; }
+        .participant-qa { background: #F0FDF4; border-left: 3px solid #22C55E; }
+        @media print { .no-print { display: none; } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-black text-white py-6 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center justify-between flex-wrap gap-4">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold">MBAI Day 1 - Organizing Leaders & Team</h1>
+                    <p class="text-red-400 mt-1">MBAI Batch 36 | 29 January 2026 | Enhanced Transcript Analysis</p>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-400">Trainer: Sanjeev Jain</p>
+                    <p class="text-sm text-gray-400">Implementation: Anuj Sharma, Avishek Bose</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs - Two Rows -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 no-print">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <!-- Row 1 -->
+            <div class="flex flex-wrap justify-center gap-2 mb-2">
+                <button class="tab-btn active px-4 py-2 rounded-lg font-medium text-sm transition-all border border-gray-200" onclick="showTab('overview')">📋 Overview</button>
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium text-sm transition-all border border-gray-200 hover:bg-gray-100" onclick="showTab('superpowers')">⚡ Two Superpowers</button>
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium text-sm transition-all border border-gray-200 hover:bg-gray-100" onclick="showTab('testimonial')">🎤 Guest Testimonial</button>
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium text-sm transition-all border border-gray-200 hover:bg-gray-100" onclick="showTab('team')">👥 Team Organization</button>
+            </div>
+            <!-- Row 2 -->
+            <div class="flex flex-wrap justify-center gap-2">
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium text-sm transition-all border border-gray-200 hover:bg-gray-100" onclick="showTab('tools')">🛠️ AI Tools</button>
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium text-sm transition-all border border-gray-200 hover:bg-gray-100" onclick="showTab('compass')">🧭 Business Compass</button>
+                <button class="tab-btn px-4 py-2 rounded-lg font-medium text-sm transition-all border border-gray-200 hover:bg-gray-100" onclick="showTab('actions')">✅ Action Items</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        
+        <!-- Tab 1: Overview -->
+        <div id="overview" class="tab-content active space-y-6">
+            <div class="key-insight p-6">
+                <h2 class="text-xl font-bold text-red-400 mb-3">🎯 The Core Message</h2>
+                <p class="text-lg leading-relaxed">"If every day is a photocopy of yesterday, you cannot create something new. If you want to achieve something new, you have to make small, small changes in what you do every day."</p>
+                <p class="text-sm text-gray-400 mt-2">— Sanjeev Jain, Session Opening</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-red-600">
+                    <h3 class="text-lg font-bold mb-4">🌳 BE → DO → HAVE Framework</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <span class="bg-red-100 text-red-700 px-2 py-1 rounded text-sm font-bold">ROOTS</span>
+                            <div>
+                                <p class="font-medium">Leadership • Discipline • Culture • Plan</p>
+                                <p class="text-sm text-gray-600">These are what you need to BE</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm font-bold">DO</span>
+                            <div>
+                                <p class="font-medium">Systems • Processes • SOPs • Meetings</p>
+                                <p class="text-sm text-gray-600">Actions that come from being</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-sm font-bold">FRUITS</span>
+                            <div>
+                                <p class="font-medium">Autopilot • Team Alignment • Profits</p>
+                                <p class="text-sm text-gray-600">Results you will HAVE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg border-t-4 border-black">
+                    <h3 class="text-lg font-bold mb-4">📐 PPP Framework</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold">P</div>
+                            <div>
+                                <p class="font-bold">PURPOSE</p>
+                                <p class="text-sm text-gray-600">Business Plan & Vision (Why you exist)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white font-bold">P</div>
+                            <div>
+                                <p class="font-bold">PEOPLE</p>
+                                <p class="text-sm text-gray-600">Culture & Team (Who executes)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white font-bold">P</div>
+                            <div>
+                                <p class="font-bold">PROCESS</p>
+                                <p class="text-sm text-gray-600">Automation & Systems (How it gets done)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-box p-5 rounded-lg">
+                <p class="text-lg italic">"We don't rise to the level of our goals, we fall to the level of our systems."</p>
+                <p class="text-sm text-gray-600 mt-2">— James Clear (Atomic Habits - played during session)</p>
+            </div>
+
+            <div class="video-ref p-4">
+                <h4 class="font-bold text-orange-700 mb-2">📹 Videos Shown in Session</h4>
+                <ul class="text-sm space-y-1 text-gray-700">
+                    <li>• <strong>Atomic Habits Summary</strong> (Hindi) - "Never miss twice" concept</li>
+                    <li>• <strong>Time Video</strong> - "What are you gonna do today?" life perspective</li>
+                    <li>• <strong>Shah Rukh Khan</strong> - Law of Attraction personal story</li>
+                    <li>• <strong>The Secret</strong> - Manifestation and attraction principles</li>
+                    <li>• <strong>Projector vs Screen</strong> - Creating vs Reacting concept</li>
+                </ul>
+            </div>
+
+            <div class="bg-yellow-50 border border-yellow-300 rounded-lg p-5">
+                <h3 class="font-bold text-yellow-800 mb-2">💡 Key Session Theme</h3>
+                <p class="text-gray-700"><strong>Systematic before Automatic</strong> — Before you can automate your business, you must first systematize what you do every day. Observe your actions, then improve them.</p>
+            </div>
+        </div>
+
+        <!-- Tab 2: Two Superpowers -->
+        <div id="superpowers" class="tab-content space-y-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">⚡ The Two Superpowers</h2>
+            
+            <p class="text-gray-600 mb-6">Sanjeev Jain explained that while time is limited, most people don't realize the superpowers they have been given. These two superpowers, when combined with scientific understanding, can transform your reality.</p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Superpower 1: Commitment -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-red-600 text-white p-4">
+                        <h3 class="text-xl font-bold">🔥 Superpower #1: COMMITMENT</h3>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="quote-box p-4 rounded">
+                            <p class="italic">"If your relative is in the hospital and the doctor says a medicine is only available in the US — will you get it? Yes! That's commitment. The problem is not difficulty, it's commitment."</p>
+                            <p class="text-sm text-gray-500 mt-2">— Sanjeev Jain's hospital medicine example</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold">Key Insights from Discussion:</h4>
+                            <ul class="text-sm space-y-2 text-gray-700">
+                                <li>✓ Everything you've achieved in life is because of your commitment</li>
+                                <li>✓ Many things remain dreams only — only what you commit to becomes reality</li>
+                                <li>✓ Problem: We keep options open, do random things, Monday to Saturday passes without meaningful progress</li>
+                                <li>✓ Shift: From "What should I do today?" → "What have I COMMITTED to achieving today?"</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded">
+                            <p class="text-sm font-medium">💬 Sanjeev referenced Salman Khan from "Wanted" movie for the level of commitment needed for superlative success</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Superpower 2: Law of Attraction -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-black text-white p-4">
+                        <h3 class="text-xl font-bold">✨ Superpower #2: LAW OF ATTRACTION</h3>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="quote-box p-4 rounded">
+                            <p class="italic">"If I see it in my mind, I will hold it in my hand."</p>
+                            <p class="text-sm text-gray-500 mt-2">— Bob Proctor (attendees typed this in chat)</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-bold">Key Insights from Discussion:</h4>
+                            <ul class="text-sm space-y-2 text-gray-700">
+                                <li>✓ Your thoughts become things — what you think about, you attract</li>
+                                <li>✓ Universe will help you, but first you must CHOOSE what you want</li>
+                                <li>✓ If you don't choose, how can God/Universe help you?</li>
+                                <li>✓ Shah Rukh Khan video shown — his personal Law of Attraction story</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded">
+                            <p class="text-sm font-medium">🎬 Movie "The Secret" clip was played (available on YouTube in Hindi & English)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Observer Effect -->
+            <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-6 border border-purple-200">
+                <h3 class="text-xl font-bold text-purple-800 mb-4">🔬 The Observer Effect (Quantum Science)</h3>
+                <p class="text-gray-700 mb-4">Sanjeev explained this as scientific proof for why these superpowers work:</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-bold text-purple-700">The Double Slit Experiment</h4>
+                        <p class="text-sm text-gray-600 mt-2">When electrons are NOT observed, they behave randomly as waves. The moment someone observes them, they behave differently as particles. This has been tested 50,000+ times with the same result.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-bold text-purple-700">Business Application</h4>
+                        <p class="text-sm text-gray-600 mt-2">"The moment you start observing your own actions, your business will start behaving differently. If you're not observing your actions, you'll be stuck in firefighting forever."</p>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-purple-100 rounded">
+                    <p class="font-medium text-purple-800">Key Quote: "When you change the way you look at things, the things you look at change." — Dr. Wayne Dyer</p>
+                </div>
+            </div>
+
+            <!-- Projector vs Screen -->
+            <div class="bg-black text-white rounded-xl p-6">
+                <h3 class="text-xl font-bold text-red-400 mb-4">🎬 Are You the SCREEN or the PROJECTOR?</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border border-gray-700 rounded-lg p-4">
+                        <h4 class="font-bold text-gray-400 mb-2">📺 THE SCREEN (Reacting)</h4>
+                        <ul class="text-sm space-y-1 text-gray-300">
+                            <li>• Lets fate decide what happens</li>
+                            <li>• Reacts to whatever is projected on them</li>
+                            <li>• Living in firefighting mode</li>
+                            <li>• Monday to Saturday just "happens"</li>
+                        </ul>
+                    </div>
+                    <div class="border border-red-600 rounded-lg p-4 bg-red-900/20">
+                        <h4 class="font-bold text-red-400 mb-2">🎥 THE PROJECTOR (Creating)</h4>
+                        <ul class="text-sm space-y-1 text-gray-300">
+                            <li>• Creates their own Monday, Tuesday, Wednesday...</li>
+                            <li>• Projects what they want to see</li>
+                            <li>• Living intentionally, designing their week</li>
+                            <li>• "These people project a movie, others just watch"</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="text-center mt-4 text-yellow-400 font-medium">"If you're currently a screen, become the projector. Choose what you will project."</p>
+            </div>
+
+            <!-- ONE PROMISE -->
+            <div class="bg-red-600 text-white rounded-xl p-6 text-center">
+                <h3 class="text-2xl font-bold mb-4">🎯 THE ONE PROMISE</h3>
+                <div class="bg-white text-black rounded-lg p-6 max-w-2xl mx-auto">
+                    <p class="text-xl font-bold italic">"I will NOT start my work until my entire Week is Designed"</p>
+                    <p class="text-sm text-gray-600 mt-3">— Sanjeev Jain's Lakshman Rekha</p>
+                </div>
+                <p class="mt-4 text-red-100">This is the non-negotiable commitment that separates projectors from screens.</p>
+            </div>
+        </div>
+
+        <!-- Tab 3: Guest Testimonial -->
+        <div id="testimonial" class="tab-content space-y-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">🎤 Guest Testimonial: Amol Dahake</h2>
+            
+            <div class="testimonial-box rounded-xl p-6">
+                <div class="flex items-start gap-4 mb-4">
+                    <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">AD</div>
+                    <div>
+                        <h3 class="text-xl font-bold">Amol Dahake</h3>
+                        <p class="text-gray-600">Partner, Deepshika Enterprises</p>
+                        <p class="text-sm text-gray-500">Industrial & Mining Equipment | MBAI Batch 34 (April-May 2025)</p>
+                    </div>
+                </div>
+                
+                <div class="quote-box p-4 rounded mb-4">
+                    <p class="italic">"Normally, I don't watch any movie twice. But your session — I'm attending it for the second time and the energy is still the same. It's really refreshing!"</p>
+                </div>
+
+                <h4 class="font-bold text-lg mb-3">Key Transformations Shared:</h4>
+                
+                <div class="grid md:grid-cols-2 gap-4 mb-4">
+                    <div class="bg-white p-4 rounded-lg border">
+                        <h5 class="font-bold text-red-700 mb-2">✓ Commitment & Discipline</h5>
+                        <p class="text-sm text-gray-600">"The real meaning of commitment we learned from Sanjeev sir. Discipline is the biggest capital for any business. If you're not disciplined, if team members are not disciplined, nothing will happen as you decided."</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border">
+                        <h5 class="font-bold text-red-700 mb-2">✓ Law of Attraction Works</h5>
+                        <p class="text-sm text-gray-600">"Whatever I manifested, whatever I attracted — it definitely happened! In the last week of December, I said 2026 will be the year of publicity. And at the start of this year, I got to speak in front of 300 people!"</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border">
+                        <h5 class="font-bold text-red-700 mb-2">✓ Theme Days System</h5>
+                        <p class="text-sm text-gray-600">"We set theme days in our calendar. Tuesday and Wednesday are my sales days. Friday is my marketing day. All marketing meetings happen only on Friday. Buffer time between activities is the key."</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border">
+                        <h5 class="font-bold text-red-700 mb-2">✓ Core Values: STRIDE</h5>
+                        <p class="text-sm text-gray-600">"We created an acronym STRIDE from our core values (Safety, Trust, Relationships...). Now we have danglers in our office. When someone sees STRIDE, they immediately know our values."</p>
+                    </div>
+                </div>
+
+                <div class="participant-qa p-4 rounded mb-4">
+                    <h5 class="font-bold text-green-700 mb-2">Q&A with Participants:</h5>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <p class="font-medium">Manish Jain asked: "How did you get team alignment towards common goals?"</p>
+                            <p class="text-gray-600 ml-4">Amol: "Business starts from myself. If I manage myself, it helps my business. The business plan tool helps us break 5-year goals into yearly, monthly, and weekly — that creates alignment."</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Tarun Kathuria asked: "What challenges did you face during implementation?"</p>
+                            <p class="text-gray-600 ml-4">Amol: "The biggest challenge was discipline and time. But I decided Thursday is my learning day (Guru Hour). I blocked it in the calendar. Law of Attraction works — all meetings automatically move to Wednesday or Friday!"</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Tarun asked: "How did you handle team resistance to new systems?"</p>
+                            <p class="text-gray-600 ml-4">Amol: "I showed them the RESULTS. When HR needed employee salary history, it took time in old system. I showed her — with HRMS, one click gives all details. Results always help with implementation."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 p-4 rounded border border-yellow-300">
+                    <p class="font-medium text-yellow-800">💡 Amol's Key Insight: "Even though it's a small business for me, we are living the culture of Adanis and Ambanis. We have started living that culture."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Team Organization -->
+        <div id="team" class="tab-content space-y-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">👥 Team Organization</h2>
+
+            <div class="key-insight p-6 mb-6">
+                <h3 class="text-xl font-bold text-red-400 mb-2">CEO = Chief Energy Officer</h3>
+                <p>Your job is to absorb all fear and exude hope. Your team looks to you for energy and direction.</p>
+            </div>
+
+            <!-- Don't Be Chaudhary -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="bg-red-600 text-white p-4">
+                    <h3 class="text-lg font-bold">⚠️ Don't Become the "Chaudhary" (Village Head)</h3>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-2 border-red-200 rounded-lg p-4 bg-red-50">
+                            <h4 class="font-bold text-red-700 mb-3">❌ The Chaudhary Trap</h4>
+                            <ul class="text-sm space-y-2">
+                                <li>• Everyone comes to YOU for every decision</li>
+                                <li>• "Sanjay ne kiya", "Nitin ne kiya", "Sujit ne kiya" — all complaints come to you</li>
+                                <li>• Team waits for you, doesn't take ownership</li>
+                                <li>• Every problem becomes a bottleneck</li>
+                                <li>• Result: Stagnation, Stress, No Teamwork</li>
+                            </ul>
+                        </div>
+                        <div class="border-2 border-green-200 rounded-lg p-4 bg-green-50">
+                            <h4 class="font-bold text-green-700 mb-3">✓ The Coach Approach</h4>
+                            <ul class="text-sm space-y-2">
+                                <li>• "You are capable, solve this yourself"</li>
+                                <li>• "Nitin, you solve this. You have more experience than me"</li>
+                                <li>• "If you have difficulty, take advice from Sahir"</li>
+                                <li>• Force team to collaborate with each other</li>
+                                <li>• Result: Growth & Freedom for you</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-center font-medium text-gray-700">"Step back, let them step up. Build a self-sufficient team that creates a self-sufficient business."</p>
+                </div>
+            </div>
+
+            <!-- Meeting Rhythms -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-bold mb-4">📅 Meeting Rhythms</h3>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="border rounded-lg p-4 text-center">
+                        <div class="text-3xl font-bold text-red-600">Daily</div>
+                        <div class="text-lg font-medium">Huddle</div>
+                        <div class="text-sm text-gray-600 mt-2">12-15 minutes with all team</div>
+                        <div class="text-xs text-gray-500 mt-1">What did you do? What will you do? Any blockers?</div>
+                    </div>
+                    <div class="border rounded-lg p-4 text-center">
+                        <div class="text-3xl font-bold text-black">Weekly</div>
+                        <div class="text-lg font-medium">Review</div>
+                        <div class="text-sm text-gray-600 mt-2">2-3 hours with HODs</div>
+                        <div class="text-xs text-gray-500 mt-1">Progress review, planning, problem-solving</div>
+                    </div>
+                    <div class="border rounded-lg p-4 text-center">
+                        <div class="text-3xl font-bold text-gray-600">Monthly</div>
+                        <div class="text-lg font-medium">Review</div>
+                        <div class="text-sm text-gray-600 mt-2">3-4 hours</div>
+                        <div class="text-xs text-gray-500 mt-1">Strategic review, KPIs, course correction</div>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-yellow-50 rounded border border-yellow-200">
+                    <p class="text-sm font-medium text-yellow-800">⚠️ Golden Rule: NO DISCUSSIONS in daily huddle! If something needs discussion, say "We'll discuss after the meeting at 3 PM" or "You guys handle it."</p>
+                </div>
+            </div>
+
+            <!-- Weekly Design -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-bold mb-4">📆 5 Steps to Design Your Week</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded">
+                        <span class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">1</span>
+                        <div>
+                            <p class="font-medium">Create time blocks</p>
+                            <p class="text-sm text-gray-600">For each task/activity, add 15-20 min buffer</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded">
+                        <span class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">2</span>
+                        <div>
+                            <p class="font-medium">Add daily buffer</p>
+                            <p class="text-sm text-gray-600">1-2 hours per day for unexpected tasks</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded">
+                        <span class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">3</span>
+                        <div>
+                            <p class="font-medium">Add weekly buffer</p>
+                            <p class="text-sm text-gray-600">3-4 hours per week for overflow</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded">
+                        <span class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">4</span>
+                        <div>
+                            <p class="font-medium">Set theme days</p>
+                            <p class="text-sm text-gray-600">Monday = Marketing, Thursday = Learning, etc.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-gray-50 rounded">
+                        <span class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">5</span>
+                        <div>
+                            <p class="font-medium">Review & adjust</p>
+                            <p class="text-sm text-gray-600">Sunday evening — design next week before it begins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Calendar -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-bold mb-4">📅 Team Calendar Setup</h3>
+                <p class="text-gray-600 mb-4">Create separate Google Calendars for each department:</p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Marketing Calendar</span>
+                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Sales Calendar</span>
+                    <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">HR Calendar</span>
+                    <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Finance Calendar</span>
+                    <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">Operations Calendar</span>
+                </div>
+                <p class="text-sm text-gray-500 mt-3">AI can help create these calendars — will be covered in next session</p>
+            </div>
+        </div>
+
+        <!-- Tab 5: AI Tools -->
+        <div id="tools" class="tab-content space-y-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">🛠️ AI Tools & Resources</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Learning Tools -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4">📚 Learning Tools</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">📱</div>
+                            <div>
+                                <p class="font-medium">Kuku FM</p>
+                                <p class="text-sm text-gray-600">Hindi/Marathi audiobooks, ₹2 trial available</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">🎧</div>
+                            <div>
+                                <p class="font-medium">Audible</p>
+                                <p class="text-sm text-gray-600">2 free credits for Prime members</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">📝</div>
+                            <div>
+                                <p class="font-medium">NoteGPT</p>
+                                <p class="text-sm text-gray-600">Summarize YouTube videos, podcasts, documents</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Platforms -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4">🤖 AI Platforms</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">🔮</div>
+                            <div>
+                                <p class="font-medium">POE (poe.com)</p>
+                                <p class="text-sm text-gray-600">Free access to ChatGPT, Claude, Gemini, Perplexity all in one</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">🎤</div>
+                            <div>
+                                <p class="font-medium">Wispr</p>
+                                <p class="text-sm text-gray-600">Voice-to-text for faster typing</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">📧</div>
+                            <div>
+                                <p class="font-medium">Jio Gemini Pro</p>
+                                <p class="text-sm text-gray-600">Free for Jio postpaid users (check with Jio support)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gmail AI Features -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4">📧 Gmail AI Features (Start Using!)</h3>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-gray-50 rounded">
+                            <p class="font-medium">Help Me Write</p>
+                            <p class="text-sm text-gray-600">AI writes email drafts for you</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded">
+                            <p class="font-medium">Thread Summarization</p>
+                            <p class="text-sm text-gray-600">Summarize long email threads instantly</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded">
+                            <p class="font-medium">Ask Gemini (Side Panel)</p>
+                            <p class="text-sm text-gray-600">Chat with AI about your emails</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded">
+                            <p class="font-medium">Calendar Integration</p>
+                            <p class="text-sm text-gray-600">AI suggests meeting times from emails</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productivity Apps -->
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4">⚡ Productivity Apps</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">🔔</div>
+                            <div>
+                                <p class="font-medium">Memory AI</p>
+                                <p class="text-sm text-gray-600">WhatsApp reminders, OTP forwarding</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">📱</div>
+                            <div>
+                                <p class="font-medium">Microsoft SMS Organizer</p>
+                                <p class="text-sm text-gray-600">Auto-categorize SMS, track deliveries</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center">🔗</div>
+                            <div>
+                                <p class="font-medium">CBX Start</p>
+                                <p class="text-sm text-gray-600">start.ceoitbox.com — Organize all your links</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommended Books -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-bold mb-4">📚 Recommended Books (mentioned in session)</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-center p-3 bg-gray-50 rounded">
+                        <p class="font-medium text-sm">Atomic Habits</p>
+                        <p class="text-xs text-gray-500">James Clear</p>
+                    </div>
+                    <div class="text-center p-3 bg-gray-50 rounded">
+                        <p class="font-medium text-sm">The Secret</p>
+                        <p class="text-xs text-gray-500">Rhonda Byrne</p>
+                    </div>
+                    <div class="text-center p-3 bg-gray-50 rounded">
+                        <p class="font-medium text-sm">4-Hour Work Week</p>
+                        <p class="text-xs text-gray-500">Tim Ferriss</p>
+                    </div>
+                    <div class="text-center p-3 bg-gray-50 rounded">
+                        <p class="font-medium text-sm">E-Myth Revisited</p>
+                        <p class="text-xs text-gray-500">Michael Gerber</p>
+                    </div>
+                    <div class="text-center p-3 bg-gray-50 rounded">
+                        <p class="font-medium text-sm">Think & Grow Rich</p>
+                        <p class="text-xs text-gray-500">Napoleon Hill</p>
+                    </div>
+                    <div class="text-center p-3 bg-gray-50 rounded">
+                        <p class="font-medium text-sm">Power of Now</p>
+                        <p class="text-xs text-gray-500">Eckhart Tolle</p>
+                    </div>
+                    <div class="text-center p-3 bg-gray-50 rounded">
+                        <p class="font-medium text-sm">Rockefeller Habits</p>
+                        <p class="text-xs text-gray-500">Verne Harnish</p>
+                    </div>
+                    <div class="text-center p-3 bg-gray-50 rounded">
+                        <p class="font-medium text-sm">Who Moved My Cheese</p>
+                        <p class="text-xs text-gray-500">Spencer Johnson</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-ref p-4">
+                <p class="font-medium text-orange-700">💡 Tip from Session: Use Google Translate app with transcribe feature for real-time Hindi to English translation during sessions</p>
+            </div>
+        </div>
+
+        <!-- Tab 6: Business Compass -->
+        <div id="compass" class="tab-content space-y-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">🧭 Business Compass App</h2>
+
+            <div class="bg-gradient-to-r from-red-600 to-red-800 text-white rounded-xl p-6 mb-6">
+                <h3 class="text-xl font-bold mb-2">compass.ceoitbox.com</h3>
+                <p class="text-red-100">Your all-in-one business management platform (Beta)</p>
+                <p class="text-sm text-red-200 mt-2">Setup was done during afternoon implementation session with Anuj Sharma</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4">📋 Business Compass Features</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">Business Plan & Vision Board</p>
+                                <p class="text-sm text-gray-600">5-year goals broken into yearly, monthly, weekly</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">Daily Reports</p>
+                                <p class="text-sm text-gray-600">Team members submit accomplishments, plans, blockers</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">Meeting Management</p>
+                                <p class="text-sm text-gray-600">Track daily huddles, attendance, AI meeting summaries</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">KPI Tracking</p>
+                                <p class="text-sm text-gray-600">Monitor key metrics per team member</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">SOP Repository</p>
+                                <p class="text-sm text-gray-600">Standard operating procedures in one place</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">AI Chat</p>
+                                <p class="text-sm text-gray-600">Built-in AI assistant for business queries</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4">🌟 Life Compass Features</h3>
+                    <p class="text-sm text-gray-600 mb-4">Personal management at <strong>life.ceoitbox.com</strong></p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">Daily Journal</p>
+                                <p class="text-sm text-gray-600">Observe yourself, track what you accomplished</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">Weekly Journal</p>
+                                <p class="text-sm text-gray-600">Week planning and reflection</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">Affirmations</p>
+                                <p class="text-sm text-gray-600">Daily positive affirmations</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">Analytics</p>
+                                <p class="text-sm text-gray-600">Track your personal progress</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-600">✓</span>
+                            <div>
+                                <p class="font-medium">Leaderboard</p>
+                                <p class="text-sm text-gray-600">Compare progress with peers</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Weekly Creation Group -->
+            <div class="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6">
+                <h3 class="text-lg font-bold text-yellow-800 mb-3">🌅 Weekly Creation Group</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="text-gray-700"><strong>When:</strong> Every Sunday, 8:30 AM - 10:00 AM</p>
+                        <p class="text-gray-700"><strong>What:</strong> Design your week together with accountability partners</p>
+                        <p class="text-gray-700"><strong>Join Link:</strong> <span class="text-red-600 font-medium">cbxit.in/95pwg</span></p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <p class="text-sm text-gray-600">"Ye chand log har hafte project karte hain ki unka aane wala hafta kaisa hoga. Har din shaam ko wo project karte hain ki unka aane wala kal kaisa hoga."</p>
+                        <p class="text-sm text-gray-500 mt-2">— From the projector video shown in session</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Setup Instructions -->
+            <div class="bg-white rounded-xl shadow-lg p-6">
+                <h3 class="text-lg font-bold mb-4">🔧 Setup Instructions (from Implementation Session)</h3>
+                <ol class="space-y-3">
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
+                        <div>
+                            <p class="font-medium">Receive email invitation</p>
+                            <p class="text-sm text-gray-600">Business owners receive sign-up link via email</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                        <div>
+                            <p class="font-medium">Sign up with Google/Microsoft</p>
+                            <p class="text-sm text-gray-600">Recommended: Use "Continue with Google" for easier login</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
+                        <div>
+                            <p class="font-medium">Complete company profile</p>
+                            <p class="text-sm text-gray-600">Upload logo, add company details, industry, employees</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+                        <div>
+                            <p class="font-medium">Set up departments</p>
+                            <p class="text-sm text-gray-600">Add departments manually or let AI suggest</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="w-6 h-6 bg-red-600 text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
+                        <div>
+                            <p class="font-medium">Start with daily reports & meetings</p>
+                            <p class="text-sm text-gray-600">Weekly and KPIs will be covered in coming sessions</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Tab 7: Action Items -->
+        <div id="actions" class="tab-content space-y-6">
+            <h2 class="text-2xl font-bold text-red-600 mb-4">✅ Action Items</h2>
+
+            <div class="bg-red-50 border-2 border-red-200 rounded-xl p-6 mb-6">
+                <h3 class="text-lg font-bold text-red-800 mb-3">🚨 Do Before Next Session (5 Feb 2026)</h3>
+                <div class="space-y-3">
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-600">☐</span>
+                        <span>Make the ONE PROMISE: "I will NOT start work until my entire Week is Designed"</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-600">☐</span>
+                        <span>Access Business Compass (compass.ceoitbox.com) and complete company profile</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-600">☐</span>
+                        <span>Access Life Compass (life.ceoitbox.com) and start daily journal</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-600">☐</span>
+                        <span>Join Weekly Creation Group - Sunday 8:30 AM (cbxit.in/95pwg)</span>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="text-red-600">☐</span>
+                        <span>Fix your HOD daily huddle time (share in WhatsApp group)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4">📱 Apps to Install</h3>
+                    <div class="space-y-2">
+                        <p>☐ Kuku FM or Audible (for learning)</p>
+                        <p>☐ Memory AI (WhatsApp reminders)</p>
+                        <p>☐ Microsoft SMS Organizer</p>
+                        <p>☐ NoteGPT (summarization)</p>
+                        <p>☐ POE app (all AI in one)</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-bold mb-4">👥 Team Actions</h3>
+                    <div class="space-y-2">
+                        <p>☐ Create team calendars (Marketing, Sales, HR, etc.)</p>
+                        <p>☐ Start daily 15-minute huddle with team</p>
+                        <p>☐ Schedule first weekly review (2-3 hours)</p>
+                        <p>☐ Define your theme days</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Important Links -->
+            <div class="bg-black text-white rounded-xl p-6">
+                <h3 class="text-lg font-bold mb-4">🔗 Important Links</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <p>📚 learn.ceoitbox.com - Learning Portal</p>
+                        <p>🧭 compass.ceoitbox.com - Business Compass</p>
+                        <p>🌟 life.ceoitbox.com - Life Compass</p>
+                    </div>
+                    <div class="space-y-2">
+                        <p>🔗 start.ceoitbox.com - CBX Start</p>
+                        <p>🆘 help.ceoitbox.com - Helpdesk</p>
+                        <p>🌅 cbxit.in/95pwg - Weekly Creation Group</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Wisdom -->
+            <div class="bg-gradient-to-r from-gray-800 to-black text-white rounded-xl p-6">
+                <h3 class="text-lg font-bold text-red-400 mb-4">💎 Key Wisdom from Today</h3>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div class="p-3 bg-white/10 rounded">
+                        <p class="italic">"Winners and Losers have the same Goals... Winners have better SYSTEMS!"</p>
+                        <p class="text-gray-400 mt-1">— James Clear</p>
+                    </div>
+                    <div class="p-3 bg-white/10 rounded">
+                        <p class="italic">"If you do what is easy, your life will be hard. If you do what is hard, your life will be easy."</p>
+                        <p class="text-gray-400 mt-1">— Les Brown</p>
+                    </div>
+                    <div class="p-3 bg-white/10 rounded">
+                        <p class="italic">"Be a Thermostat, not a Thermometer."</p>
+                        <p class="text-gray-400 mt-1">— Set the temperature, don't just measure it</p>
+                    </div>
+                    <div class="p-3 bg-white/10 rounded">
+                        <p class="italic">"Never miss twice."</p>
+                        <p class="text-gray-400 mt-1">— Atomic Habits principle</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Next Session -->
+            <div class="bg-red-600 text-white rounded-xl p-6 text-center">
+                <h3 class="text-xl font-bold mb-3">📅 Next Session</h3>
+                <p class="text-2xl font-bold">Thursday, 5 February 2026</p>
+                <div class="mt-3 space-y-1">
+                    <p>9:30 AM - 1:30 PM: Coaching Session</p>
+                    <p>2:30 PM - 6:00 PM: Implementation Session</p>
+                </div>
+                <p class="mt-4 text-red-200">Q&A Sessions: Every Saturday 2:30 PM onwards</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6 px-4 mt-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-red-400 font-bold">CEOITBOX Tech Services LLP</p>
+            <p class="text-sm text-gray-400 mt-2">MBAI - Master Business with AI | Batch 36</p>
+            <p class="text-xs text-gray-500 mt-4">© 2026 CEOITBOX. All materials protected under Indian Copyright Act 1957.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all content
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected content
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
